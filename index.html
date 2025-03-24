@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ePortfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#1a1a1a',
+                        'nav-bg': '#2d2d2d',
+                        'section-bg': '#333333',
+                        'accent': '#6366f1'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark-bg text-white">
+    <!-- Navigation Sidebar -->
+    <nav class="fixed top-0 left-0 h-full w-64 bg-nav-bg p-6 z-10 shadow-xl">
+        <div class="mb-12 mt-4">
+            <h1 class="text-2xl font-bold text-accent">Heanan Bird</h1>
+            <p class="text-gray-300">Manufacturing Engineer, E.I.T.</p>
+        </div>
+        <ul class="space-y-4">
+            <li><a href="#about" class="block p-3 hover:bg-gray-700 rounded-lg transition-all">About Me</a></li>
+            <li><a href="#projects" class="block p-3 hover:bg-gray-700 rounded-lg transition-all">Capstone Project</a></li>
+            <li><a href="#reflection" class="block p-3 hover:bg-gray-700 rounded-lg transition-all">Reflection</a></li>
+        </ul>
+        <div class="absolute bottom-8 left-0 w-full px-6">
+            <div class="flex space-x-4 justify-center">
+                <a href="https://github.com/Birdbh" class="text-gray-300 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/heanan-brody-bird-7ab559220/" class="text-gray-300 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="ml-64 p-8">
+        <!-- About Me Section -->
+        <section id="about" class="min-h-screen py-16">
+            <div class="bg-section-bg p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:outline hover:outline-accent">
+                <h2 class="text-3xl font-bold mb-8 text-accent">About Me</h2>
+                
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <!-- Profile Image -->
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/profile-placeholder.jpeg" alt="Profile Image" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300">
+                        </div>
+                        
+                        <!-- Contact Information -->
+                        <div class="bg-gray-700 p-4 rounded-lg hover-lift-effect">
+                            <h3 class="text-xl font-semibold mb-2">Contact Me</h3>
+                            <p class="mb-2">
+                                <span class="font-bold">Email:</span> 
+                                <a href="mailto:your.email@example.com" class="text-accent hover:underline">birdlkjlkj123@gmail.com</a>
+                            </p>
+                            <p class="mb-2">
+                                <span class="font-bold">Phone:</span> (360) 878-2553
+                            </p>
+                            <p>
+                                <span class="font-bold">Location:</span> Kelowna, BC
+                            </p>
+                            <div class="mt-4">
+                                <a href="assets/resume.pdf" class="inline-block bg-accent hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">
+                                    Download Resume
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-2/3">
+                        <!-- Professional Bio -->
+                        <div class="mb-8">
+                            <h3 class="text-xl font-semibold mb-2">Professional Bio</h3>
+                            <p class="mb-4">
+                                Engineering student at UBC passionate about innovation at the intersection of space technology and human needs.
+                                Co-founder of SPACE MENs (Space Menstruators), leading research on fluid dynamics in microgravity environments with
+                                recognition from the Canadian Space Agency. Experienced in multiple engineering disciplines through internships at
+                                General Motors, Seeq Corporation, and Raytheon Technologies.
+                            </p>
+                            <p>   
+                                My technical expertise spans aerospace engineering, machine learning, fluid dynamics, and embedded systems, demonstrated
+                                through hackathon wins and leadership roles in projects like the AI-Powered Candy Launcher and Wander healthcare device
+                                for dementia patients. I balance technical knowledge with strong communication skills, managing cross-functional teams
+                                and community outreach initiatives.
+                            </p>
+                            <p>
+                                As a serial builder and self-proclaimed "Serial Failure," I embrace challenges and learn from setbacks. Currently
+                                focused on pioneering research that addresses critical gaps in space exploration while mentoring the next generation of
+                                engineers through various ambassador and residence life roles at UBC.
+                            </p>
+                        </div>
+                        
+                        <!-- Skills -->
+                        <div class="mb-8">
+                            <h3 class="text-xl font-semibold mb-2">Skills</h3>
+                            <div class="flex flex-wrap gap-2 p-4 rounded-lg">
+                                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm border border-accent hover:bg-gray-600 transition-colors hover-lift-effect">Rapid Prototyping</span>
+                                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm border border-accent hover:bg-gray-600 transition-colors hover-lift-effect">Data Analytics</span>
+                                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm border border-accent hover:bg-gray-600 transition-colors hover-lift-effect">Industrial Automation</span>
+                                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm border border-accent hover:bg-gray-600 transition-colors hover-lift-effect">Project Management</span>
+                                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm border border-accent hover:bg-gray-600 transition-colors hover-lift-effect">Embedded Systems</span>
+                                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm border border-accent hover:bg-gray-600 transition-colors hover-lift-effect">Data Engineering</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Personal Interests -->
+                        <div class="mb-8">
+                            <h3 class="text-xl font-semibold mb-2">Personal Interests</h3>
+                            <p>
+                                My passion extends beyond engineering into active campus involvement, from tennis to mentoring at LEGO competitions and
+                                serving as a Resident Advisor. Driven by a love for new challenges and personal growth, I especially enjoy fostering
+                                that growth in others. As a Resident Advisor, I created the Innovation and Technology LLC, organizing events like
+                                aerospace tours to connect first-year students with real-world tech. My diverse interests reflect my core professional
+                                drivers: a love for people and a deep passion for technology and innovation.
+                            </p>
+                        </div>
+                        
+                        <!-- Other Projects/Achievements -->
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Other Achievements</h3>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>
+                                    <a href="#https://ca.badgr.com/public/assertions/FlP85FlIQd2GSsaX_9eahQ" class="text-accent hover:underline">Bronze Database Award</a> - 
+                                    The Bronze Database Award is awarded to students in the top 10 of exam performance in COSC 304 Introduction to Databases
+                                    in a given year.
+                                </li>
+                                <li>
+                                    <a href="#https://credentials.databricks.com/c9bb7e9a-1cb1-495e-b7b0-72eeccabf3a5#acc.WdUuPaqQ" class="text-accent hover:underline">Academy Accreditation - Azure Databricks Platform Architect</a> - 
+                                    Earners of this badge passed the Azure Databricks Platform Architect accreditation with a score of 80% or higher.
+                                </li>
+                                <li>
+                                    <a href="#https://credentials.databricks.com/50542b6b-7ca6-4ba5-b983-95724c0ceaa3#acc.WStHIeaC" class="text-accent hover:underline">Academy Accreditation - Databricks Lakehouse Fundamentals</a> - 
+                                    Earners of the Lakehouse Fundamentals accreditation have demonstrated the understanding of fundamental concepts related
+                                    to Databricks Lakehouse Platform.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="min-h-screen py-16">
+            <div class="bg-section-bg p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:outline hover:outline-2 hover:outline-accent">
+                <h2 class="text-3xl font-bold mb-8 text-accent">Projects</h2>
+                
+                <!-- Project Entry: Critical Seal -->
+                <div class="mb-10">
+                    <h3 class="text-2xl font-bold mb-4">Crafting the Critical Seal</h3>
+                    
+                    <!-- Project Introduction -->
+                    <div class="mb-8">
+                        <p class="mb-4 text-lg">
+                            Within Hexagon Agility's focus on clean fuel solutions for commercial vehicles, our capstone team addressed a key
+                            challenge in their fuel systems: the complex and time-consuming assembly of the piping connecting the gas
+                            cylinders. Our project, the "CNG Modular Plumbing" aimed to streamline this crucial connection. My primary focus quickly
+                            became the novel seal interface – a seemingly small component within this larger system, yet one with
+                            significant implications for achieving faster assembly, maintaining safety, and boosting overall production efficiency.
+                        </p>
+                    </div>
+                    
+                    <!-- Project Objectives -->
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold mb-3 text-accent">Why the Seal? (Objectives)</h4>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                            <!-- Non-Engineering Perspective -->
+                            <div class="bg-gray-700 p-5 rounded-lg hover-lift-effect">
+                                <h5 class="text-lg font-semibold mb-2">Non-Engineering Perspective</h5>
+                                <p>
+                                    The seal is the unsung hero preventing dangerous gas leaks. It needs to be robust and reliable, ensuring the system operates safely for everyone.
+                                </p>
+                            </div>
+                            
+                            <!-- Engineering Perspective -->
+                            <div class="bg-gray-700 p-5 rounded-lg hover-lift-effect">
+                                <h5 class="text-lg font-semibold mb-2">Engineering Perspective</h5>
+                                <p>
+                                    The objective was to design a seal that could withstand specific pressure requirements, maintain its integrity over time, and be manufacturable within project constraints.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            Early discussions highlighted the critical nature of a leak-proof connection, and I recognized the seal as a pivotal element in achieving this core objective.
+                        </p>
+                    </div>
+                    
+                    <!-- Design Process & Contributions -->
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold mb-3 text-accent">How We Got There (Process and Contributions)</h4>
+                        <p class="mb-4">
+                            My journey with the seal was highly iterative, moving from initial concepts to a refined prototype.
+                        </p>
+                        
+                        <!-- Initial Brainstorming Section -->
+                        <div class="mb-6">
+                            <h5 class="text-lg font-semibold mb-3">Initial Brainstorming & Low-Fidelity Concepts</h5>
+                            
+                            <!-- Multimedia: Initial sketches -->
+                            <div class="bg-gray-800 p-4 rounded-lg mb-4">
+                                <div class="aspect-w-16 aspect-h-9 bg-gray-700 rounded-lg flex items-center justify-center">
+                                    <img style="maxwidth: 100%; max-width: 400px; max-height: 400px;" src="assets/seal-sketches.png" alt="Initial sketches" class="w-full h-full object-cover">
+                                </div>
+                                <p class="mt-2 text-sm text-gray-300">Initial sketches exploring flat gasket, O-ring, and wrap-around seal concepts</p>
+                            </div>
+                            
+                            <p class="mb-3">
+                                My initial thoughts revolved around standard sealing solutions like flat gaskets and O-rings. However, early feedback and a deeper understanding of the unique interface geometry suggested these might not provide the optimal long-term seal. I began exploring more unconventional approaches, including a wrap-around design to better conform to the mating surfaces.
+                            </p>
+                        </div>
+                        
+                        <!-- First Digital Model Section -->
+                        <div class="mb-6">
+                            <h5 class="text-lg font-semibold mb-3">First Digital Model & 3D Printing</h5>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <!-- Multimedia: First CAD model -->
+                                <div class="bg-gray-800 p-4 rounded-lg">
+                                    <div class="aspect-w-16 aspect-h-9 bg-gray-700 rounded-lg flex items-center justify-center">
+                                        <img style="maxwidth: 100%; max-width: 400px; max-height: 400px;" src="assets/first-cad-model.png" alt="First CAD model" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="mt-2 text-sm text-gray-300">First iteration CAD model incorporating a simple seal design for initial fit testing</p>
+                                </div>
+                                
+                                <!-- Multimedia: First 3D print -->
+                                <div class="bg-gray-800 p-4 rounded-lg">
+                                    <div class="aspect-w-16 aspect-h-9 bg-gray-700 rounded-lg flex items-center justify-center">
+                                        <img style="maxwidth: 100%; max-width: 400px; max-height: 400px;" src="assets/first-3d-print_1.jpg" alt="First 3D print" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="mt-2 text-sm text-gray-300">First 3D printed prototype used to assess basic fit and identify potential interference issues</p>
+                                </div>
+                            </div>
+                            
+                            <p class="mb-3">
+                                I translated one of the more promising concepts into a basic 3D model. The objective here was primarily for fit testing. I utilized our university's Maker Space to produce a physical prototype using FDM 3D printing. This initial print highlighted several areas for improvement, particularly regarding the seal's contact area and potential for movement under pressure.
+                            </p>
+                        </div>
+                        
+                        <!-- Client Feedback & Iteration Section -->
+                        <div class="mb-6">
+                            <h5 class="text-lg font-semibold mb-3">Incorporating Client Feedback & Design Iteration</h5>
+                            
+                            <!-- Multimedia: Design comparison -->
+                            <div class="bg-gray-800 p-4 rounded-lg mb-4">
+                                <div class="aspect-w-16 aspect-h-9 bg-gray-700 rounded-lg flex items-center justify-center">
+                                    <img style="maxwidth: 100%; max-width: 400px; max-height: 400px;" src="assets/seal-design-evolution.jpg" alt="Design evolution" class="w-full h-full object-cover">
+                                </div>
+                                <p class="mt-2 text-sm text-gray-300">3D print showing the evolution of the seal design, incorporating feedback on contact area and potential for movement</p>
+                            </div>
+                            
+                            <p class="mb-3">
+                                Crucially, feedback from our client, Hexagon Agility, proved invaluable. They suggested an alternative geometry with a through-hole, and the potential use of round stock material. This shifted my focus significantly. The objective became creating a seal that utilized these specific features for enhanced sealing performance.
+                            </p>
+                            
+                            <!-- Multimedia: Revised CAD model -->
+                            <div class="bg-gray-800 p-4 rounded-lg mb-4">
+                                <div class="aspect-w-16 aspect-h-9 bg-gray-700 rounded-lg flex items-center justify-center">
+                                    <img style="maxwidth: 100%; max-width: 400px; max-height: 400px;" src="assets/revised-cad-model.png" alt="Revised CAD model" class="w-full h-full object-cover">
+                                </div>
+                                <p class="mt-2 text-sm text-gray-300">Revised CAD model implementing the client's suggestions</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Material Considerations Section -->
+                        <div class="mb-6">
+                            <h5 class="text-lg font-semibold mb-3">Material Considerations & Supplier Engagement</h5>
+                            
+                            <!-- Multimedia: Email correspondence -->
+                            <div class="bg-gray-800 p-4 rounded-lg mb-4">
+                                <div class="aspect-w-16 aspect-h-9 bg-gray-700 rounded-lg flex items-center justify-center">
+                                    <img style="maxwidth: 100%; max-width: 400px; max-height: 400px;" src="assets/material-fit-test.JPG" alt="Email correspondence" class="w-full h-full object-cover">
+                                </div>
+                                <p class="mt-2 text-sm text-gray-300">Seal fit testing & correspondence with <a style="color: #6366f1" href="https://www.gasketech.com/materials">Gasket Tech</a> helped explore suitable elastomeric materials for the final seal prototype</p>
+                            </div>
+                            
+                            <p class="mb-3">
+                                Recognizing the limitations of 3D-printed plastic for pressure testing, the focus shifted to identifying appropriate seal materials. I researched various elastomers and their properties, considering factors like pressure rating, chemical compatibility with natural gas, and availability. I engaged with <a style="color: #6366f1" href="https://www.gasketech.com/materials">Gasket Tech</a> to explore potential suppliers and material options for the final seal prototype.
+                            </p>
+                        </div>
+                        
+                        <!-- Final Preparations Section -->
+                        <div class="mb-6">
+                            <h5 class="text-lg font-semibold mb-3">Preparing for Metal Prototype & Pressure Testing</h5>
+                            
+                            <!-- Multimedia: Design evolution animation -->
+                            <div class="bg-gray-800 p-4 rounded-lg mb-4">
+                                <div class="aspect-w-16 aspect-h-9 bg-gray-700 rounded-lg flex items-center justify-center">
+                                    <img style="maxwidth: 100%; max-width: 400px; max-height: 400px;" src="assets/seal-testing.JPG" alt="Design evolution animation" class="w-full h-full object-cover">
+                                </div>
+                                <p class="mt-2 text-sm text-gray-300">Animated overview of the seal design's evolution, demonstrating the iterative process driven by feedback and testing</p>
+                            </div>
+                            
+                            <p class="mb-3">
+                                Although our initial scope involved 3D-printed prototypes for design validation, we successfully progressed to a fully
+                                functional metal prototype incorporating our final seal design. This critical step allowed us to conduct rigorous
+                                pressure testing at the Hexagon Agility site, where our seal performed flawlessly up to 1,000 PSI. The insights gained
+                                from our earlier 3D-printed models were instrumental in refining the design and ensuring the ultimate success of the
+                                seal in the final metal prototype and during high-pressure testing.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Learning and Growth Section -->
+                    <div class="bg-gray-700 p-6 rounded-lg hover-lift-effect">
+                        <h4 class="text-xl font-semibold mb-3 text-accent">Learning and Growth</h4>
+                        <p class="mb-3">
+                            This iterative process taught me the importance of:
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2 mb-3">
+                            <li><strong>Early Prototyping:</strong> Quickly creating physical models, even rudimentary ones, to identify fit issues and gather tangible feedback.</li>
+                            <li><strong>Client Collaboration:</strong> Actively incorporating client expertise and requirements into the design process.</li>
+                            <li><strong>Adaptability:</strong> Being willing to pivot and explore new design directions based on testing and feedback.</li>
+                            <li><strong>Material Awareness:</strong> Understanding the critical role material selection plays in the functionality and safety of an engineering component.</li>
+                        </ul>
+                        <p>
+                            My work on the seal, while focused on a single component, was integral to the overall success of the CNG Modular Plumbing project. It demonstrates how a seemingly simple element can undergo significant evolution through a process of ideation, prototyping, testing, and continuous improvement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection Section (Placeholder) -->
+        <section id="reflection" class="min-h-screen py-16">
+            <div class="bg-section-bg p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:outline hover:outline-2 hover:outline-accent">
+                <h2 class="text-3xl font-bold mb-8 text-accent">Reflection</h2>
+                <p>Reflection details will be added in the next step.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Additional custom styles beyond Tailwind */
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f46e5;
+}
+
+/* Add subtle animation to section transitions */
+section {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Additional hover effects for interactive elements */
+a, button {
+    transition: all 0.2s ease-in-out;
+}
+
+/* For better image loading */
+img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+/* Hover lift effect for selected sections */
+.hover-lift-effect {
+    transition: all 0.3s ease;
+}
+
+.hover-lift-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
